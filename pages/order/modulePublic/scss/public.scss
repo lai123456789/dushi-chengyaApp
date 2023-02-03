@@ -1,0 +1,47 @@
+//时间轴
+	/deep/.u-time-line {
+		margin-left: 40rpx;
+		background: red;
+	}
+	
+	/deep/.u-time-axis {
+		&::before{  //设置时间轴的左边线
+			left: 30rpx !important;
+		}
+		
+		.u-time-axis-item {
+			.u-order-time {
+				line-height: 60rpx;
+			}
+		}
+	
+		.u-node-active {
+			margin-left: 64rpx;
+			width: 30rpx;
+			height: 30rpx;
+			border-radius: 50%;
+			background: $u-type-primary;
+		}
+	
+		.u-node-gray {
+			margin-left: 64rpx;
+			width: 28rpx;
+			height: 28rpx;
+			border-radius: 50%;
+			background: $u-light-color;
+		}
+	}
+	
+	/deep/.flex {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	
+	/deep/.flex_start {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		flex-wrap: wrap;
+	}

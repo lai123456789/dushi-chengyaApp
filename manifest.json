@@ -1,0 +1,226 @@
+{
+    "name" : "成压售后",
+    "appid" : "__UNI__0A90B99",
+    "description" : "为技术工程师、网点师傅提供快速办理用户工单通道。使办理更便捷、更高效、更顺畅。",
+    "versionName" : "1.00.45",
+    "versionCode" : 45,
+    "transformPx" : false,
+    /* 5+App特有相关 */
+    "app-plus" : {
+        "usingComponents" : true,
+        "nvueCompiler" : "uni-app",
+        "compilerVersion" : 3,
+        "runmode" : "liberate",
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        /* 模块配置 */
+        "modules" : {
+            "OAuth" : {},
+            "Payment" : {},
+            "VideoPlayer" : {},
+            "Push" : {},
+            "Messaging" : {},
+            "Maps" : {},
+            "Speech" : {}
+        },
+        /* 应用发布信息 */
+        "distribute" : {
+            /* android打包配置 */
+            "android" : {
+                "permissions" : [
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.DELETE_PACKAGES\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_TASKS\"/>",
+                    "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_SMS\"/>",
+                    "<uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\"/>",
+                    "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+                    "<uses-permission android:name=\"android.permission.SEND_SMS\"/>",
+                    "<uses-permission android:name=\"android.permission.SET_PROCESS_LIMIT\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SMS\"/>"
+                ],
+                "abiFilters" : [ "armeabi-v7a", "arm64-v8a" ],
+                "autoSdkPermissions" : true
+            },
+            /* ios打包配置 */
+            "ios" : {
+                "idfa" : true
+            },
+            /* SDK配置 */
+            "sdkConfigs" : {
+                "push" : {
+                    "unipush" : {}
+                },
+                "payment" : {},
+                "ad" : {},
+                "oauth" : {
+                    "weixin" : {
+                        "appid" : "wx18a9ff9e8882ff3f",
+                        "appsecret" : "23725c05c90d3a63c732ec1a99b0c9e0",
+                        "UniversalLinks" : ""
+                    }
+                },
+                "geolocation" : {},
+                "maps" : {
+                    "baidu" : {
+                        "appkey_ios" : "5dNLH9IvcMBNwRW7WaWCxUigtniGrMdg",
+                        "appkey_android" : "5dNLH9IvcMBNwRW7WaWCxUigtniGrMdg"
+                    }
+                },
+                "speech" : {
+                    "baidu" : {
+                        "appid" : "24620114",
+                        "apikey" : "N0VoTCZKXjeRaha34EF4XvwM",
+                        "secretkey" : "xfklyDqom2Zgxz4ToKT5CvFfcdzo9pRD"
+                    }
+                }
+            },
+            "splashscreen" : {
+                "androidStyle" : "default",
+                "iosStyle" : "common",
+                "android" : {
+                    "hdpi" : "C:/Users/Administrator/Desktop/资料/starUpchengya.png",
+                    "xhdpi" : "C:/Users/Administrator/Desktop/资料/starUpchengya.png",
+                    "xxhdpi" : "C:/Users/Administrator/Desktop/资料/starUpchengya.png"
+                }
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "unpackage/res/icons/72x72.png",
+                    "xhdpi" : "unpackage/res/icons/96x96.png",
+                    "xxhdpi" : "unpackage/res/icons/144x144.png",
+                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
+                },
+                "ios" : {
+                    "appstore" : "unpackage/res/icons/1024x1024.png",
+                    "ipad" : {
+                        "app" : "unpackage/res/icons/76x76.png",
+                        "app@2x" : "unpackage/res/icons/152x152.png",
+                        "notification" : "unpackage/res/icons/20x20.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "proapp@2x" : "unpackage/res/icons/167x167.png",
+                        "settings" : "unpackage/res/icons/29x29.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "spotlight" : "unpackage/res/icons/40x40.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png"
+                    },
+                    "iphone" : {
+                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@3x" : "unpackage/res/icons/180x180.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "notification@3x" : "unpackage/res/icons/60x60.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "settings@3x" : "unpackage/res/icons/87x87.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
+                    }
+                }
+            }
+        },
+        "nativePlugins" : {
+            "Fvv-UniYXVideo" : {
+                "__plugin_info__" : {
+                    "name" : "UniYXVideo",
+                    "description" : "安卓网易云信拍照录像推流",
+                    "platforms" : "Android",
+                    "url" : "",
+                    "android_package_name" : "",
+                    "ios_bundle_id" : "",
+                    "isCloud" : false,
+                    "bought" : -1,
+                    "pid" : "",
+                    "parameters" : {}
+                }
+            },
+            "Lele-Compressor" : {
+                "__plugin_info__" : {
+                    "name" : "LeleCompressor",
+                    "description" : "视频压缩器",
+                    "platforms" : "Android",
+                    "url" : "",
+                    "android_package_name" : "",
+                    "ios_bundle_id" : "",
+                    "isCloud" : false,
+                    "bought" : -1,
+                    "pid" : "",
+                    "parameters" : {}
+                }
+            }
+        }
+    },
+    /* 快应用特有相关 */
+    "quickapp" : {},
+    /* 小程序特有相关 */
+    "mp-weixin" : {
+        "appid" : "wxb73281a66571ef20",
+        "setting" : {
+            "urlCheck" : false,
+            "minified" : true,
+            "es6" : true
+        },
+        "usingComponents" : true,
+        "optimization" : {
+            "subPackages" : true
+        },
+        "permission" : {
+            "scope.userLocation" : {
+                "desc" : "上门打卡需要获取您的定位信息"
+            }
+        },
+        "plugins" : {
+            "WechatSI" : {
+                "version" : "0.3.4",
+                "provider" : "wx069ba97219f66d99"
+            },
+            "chooseLocation" : {
+                "version" : "1.0.6",
+                "provider" : "wx76a9a06e5b4e693e"
+            }
+        }
+    },
+    "mp-alipay" : {
+        "usingComponents" : true
+    },
+    "mp-baidu" : {
+        "usingComponents" : true
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true
+    },
+    "h5" : {
+        "sdkConfigs" : {
+            "maps" : {
+                "qqmap" : {
+                    "key" : "EHRBZ-WB4WX-Y3B44-7ZHRB-SXYLQ-LSB6Z"
+                }
+            }
+        },
+        "template" : "template.h5.html",
+        "router" : {
+            "mode" : "history",
+            "base" : ""
+        }
+    }
+}

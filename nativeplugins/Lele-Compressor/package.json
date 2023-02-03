@@ -1,0 +1,24 @@
+{
+	"name": "LeleCompressor",
+	"id": "Lele-Compressor",
+	"version": "0.0.1",
+	"description": "视频压缩器",
+	"_dp_type":"nativeplugin",
+	"_dp_nativeplugin":{
+		"android": {
+			"hooksClass": "com.lele.plugin.compressor.Plugin_AppProxy",  
+			"plugins": [
+				{
+					"type": "module",
+					"name": "Lele-Compressor",
+					"class": "com.lele.plugin.compressor.VideoCompressorWXModule"
+				}
+			],
+			"integrateType": "aar",
+			"minSdkVersion" : 16,
+			"dependencies": [
+				"com.miraclehen:videocompressor:1.1.1"
+			]
+		}
+	}
+}

@@ -1,0 +1,465 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [{
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarTitleText": "首页",
+			"navigationStyle": "custom",
+			"enablePullDownRefresh": true
+		}
+	}, {
+		"path": "pages/index/mine",
+		"style": {
+			"navigationBarTitleText": "我的",
+			"navigationBarTextStyle": "white",
+			"navigationBarBackgroundColor": "#007AFF"
+		}
+	}, {
+		"path": "pages/index/order",
+		"style": {
+			"navigationBarTitleText": "我的业务",
+			"enablePullDownRefresh": true,
+			"navigationStyle": "custom"
+		}
+	}, {
+		"path": "pages/parts/parts",
+		"style": {
+			"navigationBarTitleText": "配件",
+			"enablePullDownRefresh": true,
+			"navigationBarTextStyle": "white",
+			"navigationBarBackgroundColor": "#007AFF"
+		}
+	}, {
+		"path": "pages/parts/applicationForm",
+		"style": {
+			"navigationBarTitleText": "详情",
+			"enablePullDownRefresh": true
+		}
+	}, {
+		"path": "pages/parts/addParts",
+		"style": {
+			"navigationBarTitleText": "添加配件",
+			"enablePullDownRefresh": true
+		}
+	}, {
+		"path": "pages/parts/orderDetail",
+		"style": {
+			"navigationBarTitleText": "配件申请单",
+			"enablePullDownRefresh": true
+		}
+	}, {
+		"path": "pages/index/knowledgeBase",
+		"style": {
+			"navigationBarTitleText": "知识库"
+		}
+	}, {
+		"path": "pages/index/more/theRichText",
+		"style": {
+			"navigationBarTitleText": "详情页"
+		}
+	}, {
+		"path": "pages/index/webview/webview",
+		"style": {
+			"navigationBarTitleText": "详情页"
+		}
+	}],
+	"subPackages": [{
+		"root": "pages/modules",
+		"pages": [{
+			"path": "reportingGuidelines/guidelines",
+			"style": {
+				"navigationBarTitleText": "安全指引"
+			}
+		}, {
+			"path": "reportingGuidelines/guideBook",
+			"style": {
+				"navigationBarTitleText": "作业指导书"
+			}
+		}, {
+			"path": "reportingGuidelines/operational",
+			"style": {
+				"navigationBarTitleText": "操作指引"
+			}
+		}, {
+			"path": "reportingGuidelines/reporting",
+			"style": {
+				"navigationBarTitleText": "每日汇报"
+			}
+		}, {
+			"path": "reportingGuidelines/reportingInfo",
+			"style": {
+				"navigationBarTitleText": "每日汇报-日报"
+			}
+		}, {
+			"path": "reportingGuidelines/associatedOrder",
+			"style": {
+				"navigationBarTitleText": "添加关联业务"
+			}
+		}, {
+			"path": "signInClock/signIn",
+			"style": {
+				"navigationBarTitleText": "签到打卡"
+			}
+		}, {
+			"path": "exam/exam",
+			"style": {
+				"navigationBarTitleText": "考试",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "black"
+			}
+		}, {
+			"path": "exam/examChild/examDetails",
+			"style": {
+				"navigationBarTitleText": "考试",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "black"
+			}
+		}, {
+			"path": "exam/examChild/examination",
+			"style": {
+				"navigationBarTitleText": "考试",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "black"
+			}
+		}, {
+			"path": "exam/examChild/examinationList",
+			"style": {
+				"navigationBarTitleText": "历史考试记录",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "exam/examChild/report",
+			"style": {
+				"navigationBarTitleText": "考试结果",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "black"
+			}
+		}, {
+			"path": "auth/idCertification",
+			"style": {
+				"navigationBarTitleText": "人脸认证"
+			}
+		}, {
+			"path": "auth/authorize",
+			"style": {
+				"navigationBarTitleText": "身份认证"
+			}
+		}, {
+			"path": "demo/index",
+			"style": {
+				"navigationBarTitleText": "功能实例"
+			}
+		}, {
+			"path": "demo/getPhoneNumber",
+			"style": {
+				"navigationBarTitleText": "获取手机号码"
+			}
+		}, {
+			"path": "demo/swiper",
+			"style": {
+				"navigationBarTitleText": "轮播图"
+			}
+		}, {
+			"path": "demo/mapSelect",
+			"style": {
+				"navigationBarTitleText": "地图选点"
+			}
+		}, {
+			"path": "demo/signName/skinSignName",
+			"style": {
+				"navigationBarTitleText": "签名板"
+			}
+		}, {
+			"path": "demo/signName/autographArea",
+			"style": {
+				"navigationBarTitleText": "签名区",
+				"pageOrientation": "landscape" //设置横屏
+			}
+		}, {
+			"path": "demo/uploadImg",
+			"style": {
+				"navigationBarTitleText": "上传图片"
+			}
+		}, {
+			"path": "demo/cardGrid",
+			"style": {
+				"navigationBarTitleText": "九宫格"
+			}
+		}, {
+			"path": "demo/blank",
+			"style": {
+				"navigationBarTitleText": "空白页"
+			}
+		}, {
+			"path": "demo/search",
+			"style": {
+				"navigationBarTitleText": "搜索框"
+			}
+		}, {
+			"path": "inquire/inquireCheck",
+			"style": {
+				"navigationBarTitleText": "故障代码"
+			}
+		}, {
+			"path": "inquire/checkDetail",
+			"style": {
+				"navigationBarTitleText": "故障自查详情"
+			}
+		}, {
+			"path": "inquire/inquireFee",
+			"style": {
+				"navigationBarTitleText": "收费标准"
+			}
+		}, {
+			"path": "inquire/feeDetail",
+			"style": {
+				"navigationBarTitleText": "配件费用详情"
+			}
+		}, {
+			"path": "schedule/schedule",
+			"style": {
+				"navigationBarTitleText": "我的日程"
+			}
+		}]
+	}, {
+		"root": "pages/order",
+		"pages": [{
+			"path": "pending/pending",
+			"style": {
+				"navigationBarTitleText": "质量回馈",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "order",
+			"style": {
+				"navigationBarTitleText": "办理业务"
+			}
+		}, {
+			"path": "orderDetail",
+			"style": {
+				"navigationBarTitleText": "工单详情"
+			}
+		}, {
+			"path": "productBuy/addProduct",
+			"style": {
+				"navigationBarTitleText": "添加产品"
+			}
+		}, {
+			"path": "productBuy/productDetail",
+			"style": {
+				"navigationBarTitleText": "产品申请单"
+			}
+		}, {
+			"path": "productBuy/productApplicationForm",
+			"style": {
+				"navigationBarTitleText": "产品申请单详情"
+			}
+		}, {
+			"path": "productBuy/productOrder",
+			"style": {
+				"navigationBarTitleText": "产品申请单"
+			}
+		}, {
+			"path": "addParts",
+			"style": {
+				"navigationBarTitleText": "添加配件"
+			}
+		}, {
+			"path": "collect",
+			"style": {
+				"navigationBarTitleText": "收款",
+				"navigationBarBackgroundColor": "#438EF7"
+			}
+		}, {
+			"path": "complateWork",
+			"style": {
+				"navigationBarTitleText": "客户手写签名",
+				"pageOrientation": "landscape"
+			}
+		}, {
+			"path": "principal/createServerOrder",
+			"style": {
+				"navigationBarTitleText": "服务单",
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "principal/customerInfo",
+			"style": {
+				"navigationBarTitleText": "查询客户"
+			}
+		}, {
+			"path": "principal/productInfo",
+			"style": {
+				"navigationBarTitleText": "产品列表"
+			}
+		}, {
+			"path": "accessories/accessoriesOrder",
+			"style": {
+				"navigationBarTitleText": "配件申请单",
+				"enablePullDownRefresh": true
+			}
+
+		}, {
+			"path": "accessories/applicationForm",
+			"style": {
+				"navigationBarTitleText": "详情",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "HandleOrder/finishStep",
+			"style": {
+				"navigationBarTitleText": "完单工单信息填写",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "HandleOrder/selectMinorEngineer",
+			"style": {
+				"navigationBarTitleText": "选择辅修",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "HandleOrder/tableText",
+			"style": {
+				"navigationBarTitleText": "文件详情"
+			}
+		}, {
+			"path": "HandleOrder/signature",
+			"style": {
+				"navigationBarTitleText": "文件详情"
+			}
+		}]
+	}, {
+		"root": "pages/mine",
+		"pages": [{
+			"path": "information",
+			"style": {
+				"navigationBarTitleText": "消息通知",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "informationList",
+			"style": {
+				"navigationBarTitleText": "消息提醒",
+				"navigationBarBackgroundColor": "#007AFF",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "seeMessage",
+			"style": {
+				"navigationBarTitleText": "消息详情",
+				"navigationBarBackgroundColor": "#007AFF",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		}, {
+			"path": "setting",
+			"style": {
+				"navigationBarTitleText": "设置"
+			}
+		}, {
+			"path": "wallet/wallet",
+			"style": {
+				"navigationBarTitleText": "我的钱包",
+				"navigationBarBackgroundColor": "#007AFF",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "wallet/extract",
+			"style": {
+				"navigationBarTitleText": "提现",
+				"navigationBarBackgroundColor": "#007AFF",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "wallet/extractDone",
+			"style": {
+				"navigationBarTitleText": "提现结果",
+				"navigationBarBackgroundColor": "#007AFF",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "wallet/feeDetail",
+			"style": {
+				"navigationBarTitleText": "收费详情",
+				"navigationBarBackgroundColor": "#007AFF",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "wallet/myCard",
+			"style": {
+				"navigationBarTitleText": "我的银行卡",
+				"navigationBarBackgroundColor": "#007AFF",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "wallet/addCard",
+			"style": {
+				"navigationBarTitleText": "添加银行卡",
+				"navigationBarBackgroundColor": "#007AFF",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "wallet/bankList",
+			"style": {
+				"navigationBarTitleText": "银行卡列表",
+				"enablePullDownRefresh": false
+			}
+
+		}]
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#f3f4f6"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		// "selectedColor": "#33C4CF",
+		"selectedColor": "#007AFF",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/image/home.png",
+			"selectedIconPath": "static/image/home_active.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/index/order",
+			"iconPath": "static/image/order.png",
+			"selectedIconPath": "static/image/order_active.png",
+			"text": "业务"
+		}, {
+			"pagePath": "pages/parts/parts",
+			"iconPath": "static/image/parts.png",
+			"selectedIconPath": "static/image/parts_active.png",
+			"text": "配件"
+		}, {
+			"pagePath": "pages/index/mine",
+			"iconPath": "static/image/person.png",
+			"selectedIconPath": "static/image/person_active.png",
+			"text": "我的"
+		}]
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}

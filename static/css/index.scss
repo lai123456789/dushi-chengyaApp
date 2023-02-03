@@ -1,0 +1,53 @@
+html, body{
+	background: $u-bg-color;
+}
+
+// 设置全局样式
+view,text{
+	// font-size: 24rpx;
+	// line-height: 30rpx;
+}
+
+ //没有更多了  组件显示
+.u-more-text{
+	font-size: 24rpx !important;
+}
+/* #ifdef APP-PLUS */
+.u-table{
+	// app表格单元格显示自动填充高度
+	.u-td{
+		height: auto !important;
+	}
+}
+/* #endif */
+
+//卡片
+.u-card{
+	.u-card__head{
+		font-weight: bold;
+		.u-card__head--left__title{
+			font-size: 28rpx !important;
+		}
+	}
+}
+//表单
+.u-form{ 
+	//设置所有表单 右边内容区域文字颜色均为content颜色
+	.u-form-item{
+		padding: 12rpx 0 !important;
+		.u-form-item__body{
+			.u-form-item--left{
+				color: $u-content-color;
+			}
+			.u-form-item--right{
+				view{
+					color:$u-main-color;
+				}
+				u-input{
+					width: 100%;
+				}
+			}
+		}
+		
+	}
+}
